@@ -11,7 +11,7 @@ server.use("/api/actions", actionsRoute);
 server.use("/api/projects", projectsRoute);
 
 server.get("/", (req, res) => {
-  res.status(200).json({ message: "Server is up." });
+  res.json({ message: "Server is up." });
 });
 
 // Complete your server here!
