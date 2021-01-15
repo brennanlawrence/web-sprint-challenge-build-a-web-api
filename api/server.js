@@ -11,7 +11,7 @@ server.use("/api/actions", actionsRoute);
 server.use("/api/projects", projectsRoute);
 
 server.get("/", (req, res) => {
-  res.json({ message: "Server is up." });
+  res.json({ api: "up", enviroment: process.env.NODE_ENV });
 });
 
 // Complete your server here!
